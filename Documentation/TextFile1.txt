@@ -1,0 +1,34 @@
+﻿
+
+SMS/
+├── App_Start/
+│   └── WebApiConfig.cs           - Done
+├── Controllers/                  - Done
+│   ├── AuthApiController.cs
+│   └── StudentApiController.cs   - Done
+├── DAL/
+│   ├── DatabaseHelper.cs         - Done
+│   ├── AuthRepository.cs
+│   └── StudentRepository.cs      - Done
+├── Models/
+│   ├── AuthModels.cs
+│   ├── StudentModels.cs          - Done
+│   └── LookupModel.cs
+├── Scripts/
+│   ├── js/
+│   │   ├── sms-common.js         - Done
+│   │   ├── sms-login.js          - Done
+│   │   └── sms-student.js        - Done
+│   └── css/
+│       └── sms-glass.css         - Done
+├── UI/    
+│   ├── Auth/
+│   │   └── Login.aspx            - Done
+│   ├── Dashboard/
+│   │   └── LandingPage.aspx      
+│   ├── MasterPages/
+│   │   └── SMSLanding.Master      - Done
+│   └── Students/
+│       └── StudentEntry_GEM.aspx  - Done
+├── Global.asax                   - Done
+└── Web.config                    - Done

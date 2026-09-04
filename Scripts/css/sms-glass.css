@@ -1,0 +1,74 @@
+﻿:root {
+    --glass-bg: rgba(255, 255, 255, 0.78);
+    --glass-border: rgba(255, 255, 255, 0.45);
+    --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.12);
+    --primary-accent: #2563eb;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: linear-gradient(135deg, #eef2f7 0%, #dbeafe 50%, #e0e7ff 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Glass Card Scaffolding */
+.glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid var(--glass-border);
+    border-radius: 1.25rem;
+    box-shadow: var(--glass-shadow);
+}
+
+/* Compact Mobile-First Input Styling */
+.form-control, .form-select {
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(203, 213, 225, 0.8);
+    border-radius: 0.6rem;
+    padding: 0.55rem 0.85rem;
+    font-size: 0.92rem;
+    transition: all 0.2s ease-in-out;
+}
+
+    .form-control:focus, .form-select:focus {
+        background: rgba(255, 255, 255, 0.95);
+        border-color: var(--primary-accent);
+        box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.18);
+    }
+
+.form-label {
+    font-weight: 500;
+    font-size: 0.84rem;
+    margin-bottom: 0.3rem;
+    color: #334155;
+}
+
+.student-avatar {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    background: rgba(241, 245, 249, 0.85);
+    border: 3px solid rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+    .student-avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+/* Screen Adaptations */
+@media (max-width: 576px) {
+    .glass-panel {
+        border-radius: 0.85rem;
+        padding: 1.25rem !important;
+    }
+}
